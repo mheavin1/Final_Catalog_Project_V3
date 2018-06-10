@@ -7,6 +7,7 @@ This project creates a Catalog Application that allows users to view sprorting g
 These instructions will list the IP Address, URL, summary of software installed and summary of configurations made for the final project.
 
 IP address: 13.59.201.43
+
 URL: http://13.59.201.43.xip.io
 
 
@@ -23,6 +24,7 @@ ntp, apache2, libapache2-mod-wsgi, postgresql, postgresql-contrib, git, virtuale
 Installations for Pyton: flask, httplib2, oauth2client, sqlalchemy, psycopg2, packaging, oauth2client, redis, passlib, flask-httpauth, flask-sqlalchemy, bleach, requests
 
 
+### Summary of configurations on my Amazon Lightsail instance:
 
 
 
