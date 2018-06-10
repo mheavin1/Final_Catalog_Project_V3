@@ -4,7 +4,9 @@ This project creates a Catalog Application that allows users to view sprorting g
 
 ## Getting Started
 
-These instructions will list the IP Address, URL, summary of software installed and summary of configurations made for the final project.
+These instructions will list the IP Address, URL, summary of software installed and summary of configurations made for the deployment of the catalog app on an Amazon Lightstail instance.
+
+The catalog app display a sports catalog, with a Google login feature.
 
 IP address: 13.59.201.43
 
@@ -25,6 +27,26 @@ Installations for Pyton: flask, httplib2, oauth2client, sqlalchemy, psycopg2, pa
 
 
 ### Summary of configurations on my Amazon Lightsail instance:
+
+Added a new user named grader.
+Gave grader user sudo access.
+Disable password authentication: /etc/ssh/sshd_config: confirmed the following is no:  PasswordAuthentication no
+Root login disabled
+Changed SSH Port to 2200:
+   -  Added the Custom rule in Lightsail dashboard firewall, TCP protocol, Port 2200
+   -  edited /etc/ssh/sshd_config, changed the port to 2200
+Configured firewall to allow for NTP on port 123:  sudo ufw allow 123/udp
+Setup UFW:
+  - udo ufw default deny incoming
+  - sudo ufw default allow outgoing
+  - sudo ufw allow ssh
+  - sudo ufw allow 2200/tcp (Note: Changed SSH above to port 2200)
+  - sudo ufw allow www
+  - sudo ufw allow 123/udp
+  - sudo ufw enable
+
+
+
 
 
 
