@@ -51,6 +51,11 @@ Setup UFW:
   - sudo ufw enable
   
   
+  
+ Configure Database:
+   - 
+   
+   
 Configure Database:
   - 
 
