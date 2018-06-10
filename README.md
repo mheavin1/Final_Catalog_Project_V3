@@ -28,13 +28,16 @@ Installations for Pyton: flask, httplib2, oauth2client, sqlalchemy, psycopg2, pa
 
 ### Summary of configurations on my Amazon Lightsail instance:
 
-Added a new user named grader.
-Gave grader user sudo access.
+Added a new user named grader, and gave grader sudo access.
+
 Disable password authentication: /etc/ssh/sshd_config: confirmed the following is no:  PasswordAuthentication no
-Root login disabled
+
+Root login disabled.
+
 Changed SSH Port to 2200:
    -  Added the Custom rule in Lightsail dashboard firewall, TCP protocol, Port 2200
    -  edited /etc/ssh/sshd_config, changed the port to 2200
+   
 Configured firewall to allow for NTP on port 123:  sudo ufw allow 123/udp
 Setup UFW:
   - udo ufw default deny incoming
