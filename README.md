@@ -4,38 +4,25 @@ This project creates a Catalog Application that allows users to view sprorting g
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will list the IP Address, URL, summary of software installed and summary of configurations made for the final project.
 
-Unzip the contents of backend_project.zip into your vagrant shared file.
-
-Copy your google+ json file into the same directory. 
-
-Be sure your google+ configuration has the following URL's:
-
-Authorized JavaScript origins:
-
-http://localhost:5000
-http://localhost
-
-Authorized redirect URIs
-http://localhost:5000/login
-http://localhost:5000/gconnect
-
-run models.py to create the database.
-
-run populate_models3.py to populate the database with the initial data.
-
-To run the Catalog App server, run catalog_controller.py
-
-To hit the webpage, open a browser and go to: http://localhost:5000/homepage
-
-Select the Click Here to Log in link in order to use a Gmail account to login.
+IP address: 13.59.201.43
+URL: http://13.59.201.43.xip.io
 
 
 
-### Prerequisites
+### Summary of Software installed on my Amazon Lightsail instance:
 
-The vagrant installation for the Udacity Backend course.
+update and upgrade: 
+sudo apt-get update
+sudo apt-get upgrade
+
+other installations:
+ntp, apache2, libapache2-mod-wsgi, postgresql, postgresql-contrib, git, virtualenv, python-pip, 
+
+Installations for Pyton: flask, httplib2, oauth2client, sqlalchemy, psycopg2, packaging, oauth2client, redis, passlib, flask-httpauth, flask-sqlalchemy, bleach, requests
+
+
 
 
 
