@@ -10,6 +10,8 @@ The catalog app display a sports catalog, with a Google login feature.
 
 IP address: 13.59.201.43
 
+SSH Port: 2200
+
 URL: http://13.59.201.43.xip.io
 
 
