@@ -39,7 +39,7 @@ Changed SSH Port to 2200:
    -  edited /etc/ssh/sshd_config, changed the port to 2200
    
 Configured firewall to allow for NTP on port 123:  
-  - sudo ufw allow 123/udp
+ - sudo ufw allow 123/udp
 
 Setup UFW:
   - udo ufw default deny incoming
@@ -50,20 +50,31 @@ Setup UFW:
   - sudo ufw allow 123/udp
   - sudo ufw enable
   
-  
-  
- Configure Database:
-   - 
+Created directory for the catalog application: /var/www/catalog
+
+Create virtual environment in /var/www/catalog directory.
+
+Activate virtual environment and install necessary software for the Python app:
+  - python-pip
+  - flask
+  - httplib2 
+  - oauth2client 
+  - sqlalchemy 
+  - psycopg2 
+  - packaging 
+  - oauth2client 
+  - redis 
+  - passlib 
+  - flask-httpauth
+  - pip2 
+  - install 
+  - sqlalchemy 
+  - flask-sqlalchemy 
+  - psycopg2 
+  - bleach 
+  - requests
    
-   
-Configure Database:
-  - 
-
-Setup UFW
-  - 
-
-
-
+Created hosts file: /etc/apache2/sites-available/catalog.conf
 
 
 ### And coding style tests
@@ -85,5 +96,4 @@ Version 1
 ## Authors
 
 * Marc
-
 
